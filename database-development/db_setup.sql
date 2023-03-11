@@ -1,0 +1,15 @@
+set names 'utf8';
+create database usa character set utf8 collate utf8_general_ci;
+grant all on usa.* to 'web_user'@'%' identified by 'Password1';
+use usa;
+create table states (id int primary key auto_increment, state_name varchar(50), population int);
+INSERT INTO states (state_name, population) VALUES ('California', 39029342);
+INSERT INTO states (state_name, population) VALUES ('Texas', 30029572);
+INSERT INTO states (state_name, population) VALUES ('Florida', 22244823);
+INSERT INTO states (state_name, population) VALUES ('New York', 19677151);
+INSERT INTO states (state_name, population) VALUES ('Pennsylvania', 12972008);
+INSERT INTO states (state_name, population) VALUES ('Illinois', 12582032);
+INSERT INTO states (state_name, population) VALUES ('Ohio', 11756058);
+INSERT INTO states (state_name, population) VALUES ('Georgia', 10912876);
+INSERT INTO states (state_name, population) VALUES ('North Carolina', 10698973);
+INSERT INTO states (state_name, population) VALUES ('Michigan', 10034113);

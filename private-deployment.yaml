@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+  namespace: default
+spec:
+  # minReadySeconds: 30
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+      - name: webapp
+        image: zefirnikolov/web:59
+        resources:
+          requests:
+            memory: 20Mi
+            cpu: 100m
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp
+  namespace: default
+
+spec:
+  selector:
+    app: webapp
+
+  ports:
+    - name: http
+      port: 5000
+  type: ClusterIP

@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: ssl-cert-staging-private
+  namespace: default
+spec:
+  secretName: ssl-cert-staging-private
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: zefirnikolov.org
+  dnsNames:
+  - zefirnikolov.org
+  - graf.zefirnikolov.org
