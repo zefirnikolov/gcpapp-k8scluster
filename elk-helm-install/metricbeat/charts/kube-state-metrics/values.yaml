@@ -23,7 +23,7 @@ replicas: 1
 extraArgs: []
 
 service:
-  port: 8080
+  port: 8180
   # Default to clusterIP for backward compatibility
   type: ClusterIP
   nodePort: 0
