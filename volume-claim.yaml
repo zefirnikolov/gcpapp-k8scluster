@@ -4,18 +4,18 @@ kind: PersistentVolumeClaim
 metadata:
   name: db-pvc # This must match exactly the name of persistentVolumeClaim in db.yaml file
 spec:
-  storageClassName: cloud-ssd
+  storageClassName: cloud-hdd
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 7Gi
+      storage: 2Gi
 ---
 # How do we want it implemented
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: cloud-ssd
+  name: cloud-hdd
 provisioner: kubernetes.io/gce-pd
 parameters:
   type: pd-standard
