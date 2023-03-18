@@ -5,6 +5,10 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
+  tls:
+  - hosts:
+    - zefirnikolov.org
+    secretName: ssl-cert-stage
   rules:
   - host: zefirnikolov.org
     http:
