@@ -10,5 +10,5 @@ spec:
     kind: ClusterIssuer
   commonName: zefirnikolov.org
   dnsNames:
-  - log.zefirnikolov.org
+  - logs.zefirnikolov.org
   - zefirnikolov.org
