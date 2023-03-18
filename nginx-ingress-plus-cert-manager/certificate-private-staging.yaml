@@ -11,4 +11,3 @@ spec:
   commonName: graf.zefirnikolov.org
   dnsNames:
   - graf.zefirnikolov.org
-  - log.zefirnikolov.org
