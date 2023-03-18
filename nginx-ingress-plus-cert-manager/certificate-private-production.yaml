@@ -1,14 +1,13 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: ssl-cert-production-private
+  name: ssl-cert-prod-private
   namespace: default
 spec:
-  secretName: ssl-cert-production-private
+  secretName: ssl-cert-prod-private
   issuerRef:
-    name: letsencrypt-production
+    name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: zefirnikolov.org
+  commonName: log.zefirnikolov.org
   dnsNames:
-  - zefirnikolov.org
-  - graf.zefirnikolov.org
+  - log.zefirnikolov.org
