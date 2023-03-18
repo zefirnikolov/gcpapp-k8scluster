@@ -8,7 +8,6 @@ spec:
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
-  commonName: zefirnikolov.org
+  commonName: www.zefirnikolov.org
   dnsNames:
   - www.zefirnikolov.org
-  - zefirnikolov.org
