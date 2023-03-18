@@ -11,3 +11,4 @@ spec:
   commonName: zefirnikolov.org
   dnsNames:
   - zefirnikolov.org
+  - www.zefirnikolov.org
