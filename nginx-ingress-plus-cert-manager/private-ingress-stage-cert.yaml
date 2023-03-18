@@ -8,17 +8,10 @@ metadata:
     nginx.ingress.kubernetes.io/auth-secret: private-login # This is where you put the name of the secret!
     nginx.ingress.kubernetes.io/auth-realm: "authentication required" # this is only what message to be shown when entering
 spec:
-  rules:
-  - host: graf.zefirnikolov.org
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: webapp
-            port:
-              number: 5000
+  tls:
+  - hosts:
+    - log.zefirnikolov.org
+    secretName: ssl-cert-stage-private
   - host: log.zefirnikolov.org
     http:
       paths:

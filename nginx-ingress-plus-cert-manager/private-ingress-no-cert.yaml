@@ -9,16 +9,6 @@ metadata:
     nginx.ingress.kubernetes.io/auth-realm: "authentication required" # this is only what message to be shown when entering
 spec:
   rules:
-  - host: graf.zefirnikolov.org
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: webapp
-            port:
-              number: 5000
   - host: log.zefirnikolov.org
     http:
       paths:
