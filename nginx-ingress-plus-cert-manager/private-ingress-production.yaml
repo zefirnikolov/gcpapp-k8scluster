@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - log.zefirnikolov.org
+    - logs.zefirnikolov.org
     secretName: ssl-cert-prod-private
   rules:
-  - host: log.zefirnikolov.org
+  - host: logs.zefirnikolov.org
     http:
       paths:
       - pathType: Prefix

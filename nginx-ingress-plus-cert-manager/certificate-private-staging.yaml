@@ -8,6 +8,6 @@ spec:
   issuerRef:
     name: letsencrypt-stage
     kind: ClusterIssuer
-  commonName: log.zefirnikolov.org
+  commonName: logs.zefirnikolov.org
   dnsNames:
-  - log.zefirnikolov.org
+  - logs.zefirnikolov.org
