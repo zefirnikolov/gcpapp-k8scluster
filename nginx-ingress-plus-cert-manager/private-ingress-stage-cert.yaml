@@ -12,6 +12,7 @@ spec:
   - hosts:
     - log.zefirnikolov.org
     secretName: ssl-cert-stage-private
+  rules:
   - host: log.zefirnikolov.org
     http:
       paths:
