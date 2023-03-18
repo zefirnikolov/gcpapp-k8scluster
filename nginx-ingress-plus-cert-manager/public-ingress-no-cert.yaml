@@ -16,3 +16,13 @@ spec:
             name: web
             port:
               number: 80
+  - host: www.zefirnikolov.org
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: web
+            port:
+              number: 80
