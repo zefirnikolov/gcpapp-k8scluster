@@ -17,6 +17,6 @@ Also another ingress object is created and applied to the ingress – **private-
 
 ![pic-private](pic-private.png)
 
-When enetered with the correct username and password - It's opening the **Kibana** UI - part of the **monitoring** of the cluster. The monitoring is separate **HELM INSTALLATIONS** of **Elastic Stack** - On the Cluster it's installed: **Elasticsearch**, **Kibana** and **Beats** - **Filebeat**, **Metricbeat** and **Heartbeat**. The files and **values.yaml** of all Elastic stack helm installations are in the **elk-helm-install** folder of the repository.
+When enetered with the correct username and password - It's opening the **Kibana** UI - part of the **logging** and **monitoring** of the cluster. The logging and monitoring are separate **HELM INSTALLATIONS** of **Elastic Stack** - On the Cluster it's installed: **Elasticsearch**, **Kibana** and **Beats** - **Filebeat**, **Metricbeat** and **Heartbeat**. The files and **values.yaml** of all Elastic stack helm installations are in the **elk-helm-install** folder of the repository.
 
 ![kibana](kibana.png)
