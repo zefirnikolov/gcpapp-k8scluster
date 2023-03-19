@@ -20,6 +20,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: kibana-kibana
+            name: kibana2-kibana
             port:
               number: 5601
