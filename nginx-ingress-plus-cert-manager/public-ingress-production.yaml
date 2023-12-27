@@ -2,14 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: public-routing
-  annotations:
-    kubernetes.io/ingress.class: "nginx"
 spec:
+  ingressClassName: nginx
   tls:
   - hosts:
     - www.zefirnikolov.org
     - zefirnikolov.org
-    secretName: ssl-cert-produ
+    secretName: ssl-cert-prod
   rules:
   - host: zefirnikolov.org
     http:
