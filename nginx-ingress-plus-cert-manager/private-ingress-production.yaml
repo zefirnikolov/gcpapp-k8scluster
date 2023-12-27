@@ -11,7 +11,7 @@ spec:
   tls:
   - hosts:
     - logs.zefirnikolov.org
-    secretName: ssl-cert-prod-private
+    secretName: ssl-cert-prod
   rules:
   - host: logs.zefirnikolov.org
     http:
@@ -20,6 +20,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: kibana2-kibana
+            name: kibana-kibana
             port:
               number: 5601
