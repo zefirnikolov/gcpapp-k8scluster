@@ -4,8 +4,8 @@ metadata:
   name: private-routing
   annotations:
     nginx.ingress.kubernetes.io/auth-type: basic
-    nginx.ingress.kubernetes.io/auth-secret: private-login # This is where you put the name of the secret!
-    nginx.ingress.kubernetes.io/auth-realm: "authentication required" # this is only what message to be shown when entering
+    nginx.ingress.kubernetes.io/auth-secret: private-login # The secret for the basic auth
+    nginx.ingress.kubernetes.io/auth-realm: "authentication required"
 spec:
   ingressClassName: nginx
   tls:
