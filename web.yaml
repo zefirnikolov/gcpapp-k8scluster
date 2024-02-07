@@ -19,6 +19,7 @@ spec:
           requests:
             memory: 20Mi
             cpu: 20m  # also can be 0.1 -> both are equal
+      imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
