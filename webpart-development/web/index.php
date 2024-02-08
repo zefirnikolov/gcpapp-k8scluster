@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Facts about the USA</title>
+  <title>Facts about the USA!</title>
   <style>
     body {
       font-family: Arial, sans-serif;
