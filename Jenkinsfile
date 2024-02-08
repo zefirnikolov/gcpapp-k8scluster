@@ -6,10 +6,11 @@ pipeline {
             steps {
                 script {
                     sh """
+                    echo "Build number is ${env.BUILD_NUMBER}"
                     rm -rf gcpapp
                     git clone https://github.com/zefirnikolov/gcpapp-k8scluster.git gcpapp
-                    docker image build -t zefirnikolov/web-usapp:\${BUILD_NUMBER} -f ./gcpapp/webpart-development/Dockerfile ./gcpapp/webpart-development
-                    docker push zefirnikolov/web-usapp:\${BUILD_NUMBER}
+                    docker image build -t zefirnikolov/web-usapp:\${env.BUILD_NUMBER} -f ./gcpapp/webpart-development/Dockerfile ./gcpapp/webpart-development
+                    docker push zefirnikolov/web-usapp:\${env.BUILD_NUMBER}
                     """
                 }
             }
@@ -18,7 +19,8 @@ pipeline {
             steps {
                 script {
                     sh """
-                    sed -i 's|zefirnikolov/web-usapp:2|zefirnikolov/web-usapp:\${BUILD_NUMBER}|' ./gcpapp/web.yaml
+                    sed -i 's|zefirnikolov/web-usapp:2|zefirnikolov/web-usapp:\${env.BUILD_NUMBER}|' ./gcpapp/web.yaml
+                    cat ./gcpapp/web.yaml
                     kubectl delete -f ./gcpapp/web.yaml || true
                     kubectl apply -f ./gcpapp/web.yaml
                     """
