@@ -48,7 +48,7 @@
   </style>
 </head>
 <body>
-  <h1>Facts about the USA!!!</h1>
+  <h1>Facts about the USA</h1>
   <img src="usa-map.png" alt="Map of the USA">
   <table>
     <tr>
@@ -60,7 +60,7 @@
       <td>333,287,557</td>
     </tr>
     <tr>
-      <td>Capitol!!</td>
+      <td>Capitol</td>
       <td>Washington, D.C.</td>
     </tr>
   </table>
