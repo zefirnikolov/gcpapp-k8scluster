@@ -91,7 +91,7 @@
 ?>
       </table>
       <footer>
-            <small><i>Build: 2023.02.03. K8s microservice architecture deployed on GCP. See the whole code - https://github.com/zefirnikolov/gcpapp-k8scluster</i></small>
+            <small><i>Build: 2025.02.03. K8s microservice architecture deployed on GCP. See the whole code - https://github.com/zefirnikolov/gcpapp-k8scluster</i></small>
       </footer>
 </body>
 </html>
